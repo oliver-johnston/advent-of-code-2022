@@ -12,7 +12,7 @@ public abstract class AocBase
         {
             Console.WriteLine();
             Console.WriteLine($"{input.Name}:");
-            Part1(input.Content).Dump();
+            Part1(new Input(input.Content)).Dump();
         }
 
         Console.WriteLine();
@@ -21,12 +21,12 @@ public abstract class AocBase
         {
             Console.WriteLine();
             Console.WriteLine($"{input.Name}:");
-            Part2(input.Content).Dump();
+            Part2(new Input(input.Content)).Dump();
         }
     }
 
-    protected abstract object Part1(string input);
-    protected abstract object Part2(string input);
+    protected abstract object Part1(Input input);
+    protected abstract object Part2(Input input);
 
     private IList<(string Name, string Content)> ReadInput(bool testsOnly)
     {

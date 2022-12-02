@@ -4,7 +4,7 @@ namespace OliverJ.AdventOfCode2022._02;
 
 class _02 : AocBase
 {
-    protected override object Part1(string input)
+    protected override object Part1(Input input)
     {
         var value = new Dictionary<string, int>
         {
@@ -16,14 +16,14 @@ class _02 : AocBase
             { "Z", 2 },
         };
 
-        return input.Split("\r\n")
+        return input.Lines
             .Select(x => x.Split(" "))
             .Select(x => (Theirs: value[x[0]], Mine: value[x[1]]))
             .Select(x => Score(x.Theirs, x.Mine))
             .Sum();
     }
 
-    protected override object Part2(string input)
+    protected override object Part2(Input input)
     {
         var value = new Dictionary<string, int>
         {
@@ -32,7 +32,7 @@ class _02 : AocBase
             { "C", 2 },
         };
 
-        return input.Split("\r\n")
+        return input.Lines
             .Select(x => x.Split(" "))
             .Select(x => (Theirs: value[x[0]], Mine: GetMove(value[x[0]], x[1])))
             .Select(x => Score(x.Theirs, x.Mine))
