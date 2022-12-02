@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>OliverJ.AdventOfCode2022</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="01\Input" />
+      <None Remove="01\Test1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="01\Input" />
+      <EmbeddedResource Include="01\Test1" />
+      <EmbeddedResource Include="02\Input" />
+      <EmbeddedResource Include="02\Test1" />
+    </ItemGroup>
+
+</Project>
