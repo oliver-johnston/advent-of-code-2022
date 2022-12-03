@@ -18,6 +18,8 @@
       <EmbeddedResource Include="01\Test1" />
       <EmbeddedResource Include="02\Input" />
       <EmbeddedResource Include="02\Test1" />
+      <EmbeddedResource Include="03\Input" />
+      <EmbeddedResource Include="03\Test1" />
     </ItemGroup>
 
 </Project>
