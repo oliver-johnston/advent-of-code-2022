@@ -1,3 +1,3 @@
-﻿using OliverJ.AdventOfCode2022._03;
+﻿using OliverJ.AdventOfCode2022._04;
 
-new _03().Run();
+new _04().Run();
