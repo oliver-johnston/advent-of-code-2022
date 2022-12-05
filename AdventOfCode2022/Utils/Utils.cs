@@ -6,7 +6,7 @@ public static class Utils
 {
     public static T Dump<T>(this T o)
     {
-        if (o is IEnumerable)
+        if (o is IEnumerable && o is not string)
         {
             foreach (var i in (IEnumerable)o)
             {
